@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <ng-template #titleTemplate let-text="title">
   <h4 class="p-2 bg-success text-white">{{text}}</h4>
   <fa name="cog" animation="spin"></fa>
@@ -7,6 +8,16 @@
 </ng-template>
 
 
+=======
+<ng-template #templateTitle let-text="title">
+  <h4 class="p-2 bg-success text-white"> {{text}}</h4>
+  <fa name="car" animation="spin" style="font-size: 3em"></fa>
+</ng-template>
+
+
+<ng-template [ngTemplateOutlet]="templateTitle" 
+[ngTemplateOutletContext]="{'title':'header'}"></ng-template>
+>>>>>>> 186d778edd0cbce7ebfc56af1bf67764d284a340
 <div class="container">
   <div id="productEntryForm" class="col-sm-12 row">   
     <div class="col-sm-6 col">
@@ -36,7 +47,12 @@
     </div>
   </div>
 </div>
+<<<<<<< HEAD
 
 <ng-template [ngTemplateOutlet]="titleTemplate" [ngTemplateOutletContext]="{title: 'Footer'}">
 </ng-template>
 
+=======
+<ng-template [ngTemplateOutlet]="templateTitle"
+[ngTemplateOutletContext]="{'title':'footer'}"></ng-template>
+>>>>>>> 186d778edd0cbce7ebfc56af1bf67764d284a340
