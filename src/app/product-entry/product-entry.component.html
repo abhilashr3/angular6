@@ -1,3 +1,12 @@
+<ng-template #titleTemplate let-text="title">
+  <h4 class="p-2 bg-success text-white">{{text}}</h4>
+  <fa name="cog" animation="spin"></fa>
+</ng-template>
+
+<ng-template [ngTemplateOutlet]="titleTemplate" [ngTemplateOutletContext]="{title: 'Header'}">
+</ng-template>
+
+
 <div class="container">
   <div id="productEntryForm" class="col-sm-12 row">   
     <div class="col-sm-6 col">
@@ -27,3 +36,7 @@
     </div>
   </div>
 </div>
+
+<ng-template [ngTemplateOutlet]="titleTemplate" [ngTemplateOutletContext]="{title: 'Footer'}">
+</ng-template>
+

@@ -10,6 +10,8 @@ export class ProductEntryComponent implements OnInit {
 
   productArray:Product = <any> <Product[]> []
 
+  done = true
+
   constructor() { }
 
   ngOnInit() {
@@ -19,7 +21,7 @@ export class ProductEntryComponent implements OnInit {
     
     let product = new Product(pid, pname)
     console.log(product)
-    this.productArray.push(product)
+    //this.productArray.push(product)
   }
 
 }
