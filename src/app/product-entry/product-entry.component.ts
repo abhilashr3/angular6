@@ -24,4 +24,13 @@ export class ProductEntryComponent implements OnInit {
     //this.productArray.push(product)
   }
 
+  // updateStyle(){
+  //   this.myStyle={"color":this.myColor,"font-weight":this.myFont}
+  //   }
+  
+  myh1="Welcome to myh1"
+
+  blueBond
+  
 }
+
